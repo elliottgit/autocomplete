@@ -1,8 +1,8 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_USER', 'username');
+define('DB_USER', 'root');
 define('DB_PASSWORD', 'password');
-define('DB_NAME', 'database name');
+define('DB_NAME', 'gcp');
 
 
 if (isset($_GET['term'])){
