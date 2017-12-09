@@ -42,15 +42,14 @@ mysql_secure_installation
 # create database and import data
 read -rsp $'Create database gcp and import the demo data, press any key to continue\n' -n1 key
 mysql -uroot -ppassword -e "CREATE DATABASE gcp"
-mysql -uroot -ppassword gcp < /home/ubuntu/gcp/countries.sql
-#mysql -u root -p password gcp < /home/elliottning/countries.sql 
+mysql -uroot -ppassword gcp < /home/elliottning/gcp/countries.sql
 
 
 # copy indexs and relevant files
 read -rsp $'Copy index page and relevant files, press any key to continue\n' -n1 key
 mv /var/www/html/index.html /var/www/html/index.default
-mv /home/ubuntu/gcp/index.php /var/www/html
-mv /home/ubuntu/gcp/search.php /var/www/html
+mv /home/elliottning/gcp/index.php /var/www/html
+mv /home/elliottning/gcp/search.php /var/www/html
 
 
 # ===display url for web page===
