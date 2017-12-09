@@ -6,9 +6,6 @@
 #version:       0.8
 #=======================================================
 
-# download realted files
-git clone https://github.com/elliottgit/gcp.git
-
 
 # download and install apache
 read -rsp $'Download and install Apache web server, press any key to continue\n' -n1 key
