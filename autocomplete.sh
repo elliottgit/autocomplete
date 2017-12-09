@@ -47,7 +47,7 @@ read -rsp $'Copy index page and relevant files, press any key to continue\n' -n1
 mv /var/www/html/index.html /var/www/html/index.default
 mv /home/elliottning/gcp/index.php /var/www/html
 mv /home/elliottning/gcp/search.php /var/www/html
-
+systemctl restart apache2
 
 # ===display url for web page===
 echo "Enter the URL below in your browser to see the website:"
