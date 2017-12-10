@@ -40,7 +40,7 @@ read -rsp $'\nStep 5: Create database and import the demo data, press any key to
 mysql -uroot -ppassword -e "CREATE DATABASE gcp"
 mysql -uroot -ppassword -e "
 USE gcp
-CREATE TABLE test (
+CREATE TABLE products (
 sku INT(10),
 product VARCHAR(200),
 type VARCHAR(20),
@@ -58,7 +58,7 @@ url TEXT
 mysql -uroot -ppassword -e "
 USE gcp
 LOAD DATA LOCAL INFILE '/home/elliottning/gcp/products.csv' 
-INTO TABLE test 
+INTO TABLE products 
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS"
