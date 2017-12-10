@@ -7,9 +7,10 @@
 </head>
 <body>
 
-        <form action='' method='post'>
-                <p><label>Product:</label><input type='text' name='product' value='' class='auto'></p>
-        </form>
+    <form action='' method='post'>  
+			<p><label>Product:</label><input type='text' name='product' value='' class='auto'></p>
+			<p style="text-align: center;"><img src="home.jpg" alt="Home Image" width="450" height="400" /></p>  
+    </form>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
@@ -21,7 +22,6 @@ $(function() {
                 source: "search.php",
                 minLength: 1
         });                             
-
 });
 </script>
 </body>
