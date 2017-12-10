@@ -66,9 +66,11 @@ IGNORE 1 ROWS"
 
 # copy indexs and relevant files
 read -rsp $'\nStep 6: Copy index page and search file, press any key to continue\n' -n1 key
+wget https://objectstorage.us-phoenix-1.oraclecloud.com/p/cGDUptYdMuYizRCuGp3uFihqts4Xr7xuO0cF9KGNjbw/n/oraclemichaelme/b/image/o/home.jpg
 mv /var/www/html/index.html /var/www/html/defaultindex
 mv /home/elliottning/gcp/index.php /var/www/html
 mv /home/elliottning/gcp/search.php /var/www/html
+mv /home/elliottning/gcp/home.jpg /var/www/html
 systemctl restart apache2
 
 # ===display url for web page===
