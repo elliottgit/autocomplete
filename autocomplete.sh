@@ -2,8 +2,8 @@
 #title:         gcp.sh
 #description:   Bash script to complete GCP demo.
 #author:        Elliott Ning
-#date:          20171209
-#version:       0.9
+#date:          20171218
+#version:       1.0
 #=======================================================
 
 
